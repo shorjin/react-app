@@ -3,10 +3,11 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
+
 const Footer = () => {
   const footerLinks = {
     company: [
-      { name: 'About', href: '#' },
+      { name: 'About US', href: '#about' },
       { name: 'Terms of Use', href: '#' },
       { name: 'Privacy Policy', href: '#' },
       { name: 'How it Works', href: '#' },
@@ -20,11 +21,11 @@ const Footer = () => {
     support: [
       { name: 'FAQ', href: '#' },
       { name: 'Policy', href: '#' },
-      { name: 'Business', href: '#' },
+      { name: 'Pet Care Tips', href: '#' },
     ],
     contact: [
       { name: 'WhatsApp', href: '#' },
-      { name: 'Support 24', href: '#' },
+      { name: 'Customer Support', href: '#' },
     ],
   }
 
@@ -51,13 +52,15 @@ const Footer = () => {
             >
               <div className="w-4 h-4 bg-blue-600 rounded-full opacity-75"></div>
               <div className="w-4 h-4 bg-red-500 rounded-full -ml-2"></div>
-              <span className="text-xl font-medium ml-1">The Next Design</span>
+              <span className="text-xl font-medium ml-1">HappyPaws</span>
             </motion.div>
+
+
             <motion.p
               variants={fadeIn('up', 0.6)}
               className="text-gray-600 mb-6"
             >
-              The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times.
+              Whether it's a quick stroll or a long adventure, we treat every dog like our own. Trusted care. Wagging tails. Happy homes.
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.7)}
@@ -142,7 +145,7 @@ const Footer = () => {
               variants={fadeIn('right', 1.0)}
               className="text-gray-600 text-sm"
             >
-              Copyright © {new Date().getFullYear()} 
+              Copyright © {new Date().getFullYear()}
             </motion.p>
             <motion.p
               variants={fadeIn('left', 1.0)}

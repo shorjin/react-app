@@ -36,8 +36,11 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section
+    <motion.section
       id="services"
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView="show"
       className="py-20 container mx-auto px-4 sm:px-6 lg:px-8"
     >
       <motion.div
@@ -85,7 +88,7 @@ const ServicesSection = () => {
             variants={fadeIn("up", 0.9)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-8 bg-blue-600 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-blue-700 transition-colors"
+            className="mt-8 bg-blue-600 text-white px-8 py-3 cursor-pointer rounded-lg hover:bg-blue-700 transition-colors"
           >
             Get started
           </motion.button>
@@ -132,7 +135,7 @@ const ServicesSection = () => {
           ))}
         </motion.div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 
